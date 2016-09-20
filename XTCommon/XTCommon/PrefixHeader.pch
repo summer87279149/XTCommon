@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  XTCommon
+//
+//  Created by Admin on 16/9/19.
+//  Copyright © 2016年 Admin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/***  当前屏幕宽度 */
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+/***  当前屏幕高度 */
+#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+
+
+#import "NHUtils.h"
+#import "NHCommonConstant.h"
+#import "UIImageView+WebCache.h"
+#import "NHDefaultHeader.h"
+#import "UIView+Frame.h"
+#import "Masonry.h"
+#import "NHCommonAPIConstant.h"
+#import "XTBaseImageView.h"
+#import "UINavigationItem+NHAddition.h"
+//#import "MBProgressHUD+NHAddition.h"
+#import "NSNotificationCenter+Addition.h"
+#import "NSDate+Addition.h"
+#import "NSDictionary+Addition.h"
+#import "UIButton+Addition.h"
+
+#import "UILabel+Addition.h"
+#import "UIView+Layer.h"
+#import "UIView+Frame.h"
+#import "NSString+Addition.h"
+#endif 
+/* PrefixHeader_pch */
