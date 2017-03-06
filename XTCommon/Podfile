@@ -12,4 +12,5 @@ pod 'UMengSocialCOM'
 pod 'YYText'
 pod 'YYWebImage'
 pod 'MBProgressHUD'
+
 end

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "XTBaseTableViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *butto = [[UIButton alloc]init];
+    butto.frame = CGRectMake(100, 100, 100, 100);
+    butto.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:butto];
+    [butto addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     
+}
+
+-(void)buttonClicked{
+    XTBaseTableViewController *cont = [[XTBaseTableViewController alloc]init];
+    
+    [cont xt_addEmptyPageWithText:@"dasdsdfsdfsdffssdfsd"];
+    
+    [self presentViewController:cont animated:YES completion:^{
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
